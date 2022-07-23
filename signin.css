@@ -1,0 +1,166 @@
+form {
+
+  justify-content: center;
+  text-align: center;
+  display: block;
+  width: 25%;
+  margin: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /* border: 1px solid black; */
+}
+
+.container {
+  padding: 16px;
+  display: block;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.container>img {
+  height: 70px;
+}
+
+h1 {
+  font-size: 20px;
+
+}
+
+h2 {
+  font-size: 15px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  /* border-radius: 20%; */
+  display: inline-block;
+  /* background: #ece7e7; */
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+#topnavbar {
+  display: flex;
+  text-align: center;
+  /* width: 80%; */
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 10px;
+  color: teal;
+
+}
+
+#topnavbar>input {
+  width: 50%;
+  height: 30px;
+  font-size: 15px;
+}
+
+
+
+#top {
+  text-align: center;
+}
+
+#top>h3 {
+  height: 25px;
+  margin: auto;
+  background-color: rgb(75, 157, 228);
+  font-size: 15px;
+  text-align: center;
+  color: antiquewhite;
+  padding-top: 12px;
+}
+
+#topnavbar>h2>a>img {
+  height: 40px;
+  border-radius: 20%;
+}
+
+#topnavbar>h2>img {
+  height: 50px;
+  /* margin-top: 20px; */
+}
+
+
+#button{
+  width: 85%;
+  background-color: #2C819D;
+  color: aliceblue;
+  border: none;
+}
+#button:hover{ 
+background-color: white;
+color: #2C819D;
+border: 1px solid #2C819D;
+
+ }
+
+label {
+  font-size: 20px;
+  /* color: rgb(129, 35, 35); */
+}
+
+
+
+#categorybottom {
+  display: flex;
+  text-align: left;
+  margin: auto;
+}
+
+#bottomul>ul {
+  display: flex;
+  justify-content: space-between;
+
+  margin: auto;
+  list-style: none;
+  text-align: center;
+  line-height: 170%;
+}
+
+#bottomul>ul>li>ul>li {
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  color: rgb(112, 108, 108);
+}
+
+#bottomul>ul>li>h4 {
+  font-size: 14px;
+  color: rgb(57, 56, 56);
+}
+
+#bottomul>ul>li>ul>li>img {
+  width: 50%;
+}
+
+#icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px;
+  width: 70%;
+  margin: auto;
+}
+
+#bottomul>ul>li>ul>li:hover {
+  background-color: rgb(148, 209, 209);
+  border-radius: 10%;
+
+}
+
+#bottomul>ul>li>h4:hover {
+  background-color: red;
+  color: aliceblue;
+  border-radius: 10%;
+}
+
+
+#endform{
+  display: flex;
+  width: 60%;
+  margin:auto;
+}
