@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NordStorm</title>
+    <link rel="stylesheet" href="data.css" />
+</head>
+
+<body>
+    <div id="top">
+
+        <div id="logo">
+            <img src="data:image/png;base64,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"
+                alt="">
+
+        </div>
+
+
+        <!-- ---------------search bar----------- -->
+        <div id="topnavbar">
+            <h2> <a href="Navbar2.html"> Nordstrom <br> Rack</a></h2>
+            <input type="text" placeholder="Search products or brand">
+            <h2> <a href="signin.html"></a> SignIn</h2>
+            <h2>MyCart</h2>
+            <h2 id="displayname"> </h2>
+        </div>
+
+        <hr>
+
+       
+    </div>
+
+    <div id="links">
+        <a href="Navbar2.html">Home </a>
+        <a href="womens.html">Womens</a>
+        <a href="kids.html">Kids</a>
+        <a href="beauty.html">Beauty</a>
+        <a href="gifts.html">Gifts</a>
+        <a href="cart.html">Cart</a>
+    </div>
+
+
+    <div id="parent">
+        <div id="container2">
+
+            <div id="category">
+                <ul>
+                    <li>SHIRTS
+                        <ul>
+                            <li>Size></li>
+                            <li>Color</li>
+                            <li>Brand</li>
+                            <li>Fit</li>
+                            <li>Ocassion</li>
+                            <li>Price</li>
+
+                        </ul>
+                    </li>
+                    <li>JEANS
+                        <ul>
+                            <li>Size</li>
+                            <li>Color</li>
+                            <li>Brand</li>
+                            <li>Fit</li>
+                            <li>Ocassion</li>
+                            <li>Price</li>
+
+                        </ul>
+                    </li>
+                    <li>T-SHIRTS
+                        <ul>
+                            <li>Size</li>
+                            <li>Color</li>
+                            <li>Brand</li>
+                            <li>Fit</li>
+                            <li>Type</li>
+                            <li>Ocassion</li>
+                            <li>Price</li>
+
+                        </ul>
+                    </li>
+                    <li>SHORTS
+                        <ul>
+                            <li>Size</li>
+                            <li>Color</li>
+                            <li>Brand</li>
+                            <li>Fit</li>
+                            <li>Ocassion</li>
+                            <li>Price</li>
+
+                        </ul>
+                    </li>
+                    <li>TROUSRES
+                        <ul>
+                            <li>Size</li>
+                            <li>Color</li>
+                            <li>Brand</li>
+                            <li>Fit</li>
+                            <li>Ocassion</li>
+                            <li>Price</li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="container">
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    var mensData = [
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/200/200/ju8oxow0/nail-polish/z/x/v/6-9-to-5-primer-gloss-nail-color-lakme-original-imaffezjxfkuex6m.jpeg?q=70",
+            name: "Ruby's Organics LM 01.8 -Skin-tint Mattyfying Foundation  ",
+            price: "1170",
+            strikedoffprice: "2599",
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/200/200/jqpiqvk0/eye-liner/b/f/c/3-5-9-to-5-impact-eye-liner-lakme-original-imafcnzeymzhx39z.jpeg?q=70",
+            name: "Ruby's Organics LM 01.8 -Skin-tint Mattyfying Foundation  ",
+            price: 699,
+            strikedoffprice: 999,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/200/200/jhkvgy80/fairness/9/m/u/30-9-to-5-complexion-care-cream-beige-lakme-original-imaev74zumwj2xmm.jpeg?q=70",
+            name: " Ruby's Organics LM 01.8 -Skin-tint Mattyfying Foundation  ",
+            price: 945,
+            strikedoffprice: 2099,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/200/200/mascara/9/3/z/lotus-herbals-4-maxlash-volumising-botanical-mascara-original-imadgyjugk8g7bja.jpeg?q=70",
+            name: "Ruby's Organics LM 01.8 -Skin-tint Mattyfying Foundation  ",
+            price: 399,
+            strikedoffprice: 799,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/200/200/jwxuvm80/make-up-remover/j/n/k/125-skin-naturals-micellar-cleansing-water-garnier-original-imafhgmfg7jfeu8z.jpeg?q=70",
+            name: "Lakmé 9to5 Primer+Matte Liquid Concealer 20 Concealer  ",
+            price: 1620,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/ki96c280/mascara/t/p/k/12-ultra-curl-long-lasting-fabulash-mascara-mars-original-imafy36zc4yhqenb.jpeg?q=70",
+            name: " Lakmé 9to5 Primer+Matte Liquid Concealer 20 Concealer ",
+            price: 1440,
+            strikedoffprice: 3199,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/k0463rk0/mascara/7/z/q/7-6-voluminous-lash-paradise-l-oreal-paris-original-imafjzagxhwfz82q.jpeg?q=70",
+            name: " Lakmé 9to5 Primer+Matte Liquid Concealer 20 Concealer  ",
+            price: 1999,
+            strikedoffprice: 3199,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/l2z26q80/compact/z/f/j/-original-image76fbz45sxxh.jpeg?q=70",
+            name: "Lakmé 9to5 Primer+Matte Liquid Concealer 20 Concealer  ",
+            price: 769,
+            strikedoffprice: 1099,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/jk76j680/face-wash/z/v/y/50-blush-and-glow-strawberry-extracts-gel-lakme-original-imaf7hk5xfmjhvpr.jpeg?q=70",
+            name: "Lakmé 9to5 Primer+Matte Liquid Concealer 20 Concealer  ",
+            price: 1299,
+            strikedoffprice: 1440,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/kn6cxow0/moisturizer-cream/m/8/7/100-absolute-perfect-radiance-day-crme-with-refill-pack-cream-original-imagfwtcqswhzu3y.jpeg?q=70",
+            name: "Lakmé 9to5 Primer+Matte Liquid Concealer 20 Concealer ",
+            price: 699,
+            strikedoffprice: 999,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/kruyw7k0/compact/m/3/x/9-face-it-compact-shell-lakme-original-imag5k3f9ydtuyna.jpeg?q=70",
+            name: "Lakmé 9to5 Primer+Matte Liquid Concealer 20 Concealer   ",
+            price: 1620,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/kh80vww0/compact/f/a/a/40-rose-face-powder-lakme-original-imafxahkpktdje3h.jpeg?q=70",
+            name: "Lakmé 9to5 Primer+Matte Liquid Concealer 20 Concealer  ",
+            price: 1620,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/l26hdow0/eyebrow-enhancer/w/a/2/-original-imagdkezfa9dkbcb.jpeg?q=70",
+            name: "Lakmé 9to5 Primer+Matte Liquid Concealer 20 Concealer  ",
+            price: 599,
+            strikedoffprice: 999,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/kq8dua80/lipstick/l/q/z/14-5-ultra-matte-lipstick-pack-of-4-mars-original-imag4ak7fkgnwyfb.jpeg?q=70",
+            name: " Lakmé Absolute Liquid Highlighter  (Ivory)",
+            price: 1575,
+            strikedoffprice: 3499,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/krz97rk0/foundation/o/h/3/perfecting-liquid-lakme-original-imag5nkjhsr6vv8h.jpeg?q=70",
+            name: "Lakmé Absolute Liquid Highlighter  (Ivory) ",
+            price: 9999,
+            strikedoffprice: 12000,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/kjlrb0w0-0/lipstick/u/n/m/38-ayurvedic-lipstick-shade-sampler-kit-just-herbs-original-imafz4zuyhsfwkd5.jpeg?q=70",
+            name: "Lakmé Absolute Liquid Highlighter  (Ivory)",
+            price: 779,
+            strikedoffprice: 1299,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/jeka07k0/foundation/b/c/7/6-9-to-5-weightless-mousse-lakme-original-imaf37yhybf5cdz6.jpeg?q=70",
+            name: "Lakmé Absolute Liquid Highlighter  (Ivory) ",
+            price: 1019,
+            strikedoffprice: 1699,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/l33cia80/lipstick/1/c/u/4-3-favourite-lipsticks-04-elle-original-imageacxma6xbzaa.jpeg?q=70",
+            name: "Lakmé Absolute Liquid Highlighter  (Ivory) ",
+            price: 1019,
+            strikedoffprice: 1699,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/kh80vww0/foundation/f/j/6/25-invisible-finish-spf-8-lakme-original-imafxahkrwqyhzjt.jpeg?q=70",
+            name: " NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation ",
+            price: 1575,
+            strikedoffprice: 3499,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/l0o6nbk0/lipstick/b/q/h/60-12-pc-set-liquid-matte-lipstick-sh-huda-original-imagcdzdktgfdhkg.jpeg?q=70",
+            name: "  NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation  ",
+            price: 3499,
+            strikedoffprice: 4999,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/kx7vc7k0/lipstick/e/s/1/mini-bullet-lipstick-set-of-12-shade-a-ronzille-original-imag9pssfnuykkah.jpeg?q=70",
+            name: "NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation  ",
+            price: 749,
+            strikedoffprice: 1499,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/k0flmkw0/lipstick/j/n/f/5-new-york-super-stay-matte-ink-liquid-lipstick-maybelline-new-original-imafgxggyczhdrgf.jpeg?q=70",
+            name: "NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation ",
+            price: 1149,
+            strikedoffprice: 2299,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/l1b1oy80/foundation/h/w/g/30-whitening-cream-dermacol-skin-care-soulation-d-cover-original-imagcwgsvn3ythag.jpeg?q=70",
+            name: " NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation ",
+            price: 1620,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/l45xea80/foundation/x/m/p/30-est-e-lauder-foundation-72-1n1-30ml-leadwort-original-imagf4gmc3zc4gsf.jpeg?q=70",
+            name: " NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation  ",
+            price: 779,
+            strikedoffprice: 1299,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/kkh6zrk0/highlighter/w/z/h/wonder-long-lasting-highlighter-mars-original-imafztgbc9q596tg.jpeg?q=70",
+            name: " NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation  ",
+            price: 3499,
+            strikedoffprice: 4999,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/krce64w0/foundation/1/l/i/ecostay-radiant-gel-foundation-lotus-make-up-original-imag55bvg7je8dqt.jpeg?q=70",
+            name: "NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation   ",
+            price: 3499,
+            strikedoffprice: 4999,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/klscivk0/blush/q/q/b/fit-me-blush-maybelline-new-york-original-imagytrtegrggrb2.jpeg?q=70",
+            name: " NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation  ",
+            price: 1399,
+            strikedoffprice: 2799,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/km2clu80/primer/i/p/9/10-glass-glow-pre-make-up-oil-renee-original-imagffwzvyafvpmy.jpeg?q=70",
+            name: " NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation ",
+            price: 1575,
+            strikedoffprice: 3499,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/l407mvk0/concealer/a/v/a/8-beauty-pro-hd-conceal-me-correct-liquid-concealer-fit-for-girl-original-imagezp3fmbhxhbz.jpeg?q=70",
+            name: "NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation ",
+            price: 3919,
+            strikedoffprice: 5599,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/k63xle80/highlighter/6/e/e/highlighter-palette-37-5-gr-get-baked-highlighter-black-original-imafzmk2ryrqhxpb.jpeg?q=70",
+            name: "NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation ",
+            price: 1620,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/l44hyfk0/combo-kit/r/b/p/instaweddings-combo-fitme-foundation-230-colossal-waterproof-original-imagf3bkskamqyy5.jpeg?q=70",
+            name: "NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation ",
+            price: 1620,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/300/300/kh80vww0/compact/f/a/a/40-rose-face-powder-lakme-original-imafxahkpktdje3h.jpeg?q=90",
+            name: "NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation ",
+            price: 7599,
+            strikedoffprice: 9999,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/khcb7gw0/foundation/a/z/d/18-fit-me-matte-poreless-liquid-tube-maybelline-new-york-original-imafxdjkgxuqvw7d.jpeg?q=70",
+            name: "NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation ",
+            price: 909,
+            strikedoffprice: 1299,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/khqllzk0/foundation/9/f/g/30-9-to-5-complexion-care-cc-cream-lakme-original-imafxzwczyqsc2gu.jpeg?q=70",
+            name: "NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation ",
+            price: 779,
+            strikedoffprice: 1299,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/kh80vww0/foundation/y/u/2/25-absolute-mattreal-skin-natural-mousse-spf-8-lakme-original-imafxahkzgs9zgcg.jpeg?q=70",
+            name: "NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation  ",
+            price: 1749,
+            strikedoffprice: 2499,
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/612/612/kgqvlow0/foundation/p/e/t/14-treat-love-care-24-hrs-antipollution-foundation-myglamm-original-imafwxajy9as7nxg.jpeg?q=70",
+            name: "NYN HUDA WATER BEAUtY & AIR PAD CC CREAM FOUNDATION Foundation ",
+            price: 1079,
+            strikedoffprice: 1799,
+        },
+    ];
+</script>
+
+
+<script src="mens.js">
+
+</script>

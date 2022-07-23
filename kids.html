@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NordStorm</title>
+    <link rel="stylesheet" href="data.css" />
+</head>
+
+<body>
+    <div id="top">
+
+        <div id="logo">
+            <img src="data:image/png;base64,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"
+                alt="">
+
+        </div>
+
+
+        <!-- ---------------search bar----------- -->
+        <div id="topnavbar">
+            <h2> <a href="Navbar2.html"> Nordstrom <br> Rack</a></h2>
+            <input type="text" placeholder="Search products or brand">
+            <h2> <a href="signin.html"></a> SignIn</h2>
+            <h2>MyCart</h2>
+            <h2 id="displayname"> </h2>
+        </div>
+
+        <hr>
+
+       
+    </div>
+
+    <div id="links">
+        <a href="Navbar2.html">Home </a>
+        <a href="womens.html">Womens</a>
+        <a href="kids.html">Kids</a>
+        <a href="beauty.html">Beauty</a>
+        <a href="gifts.html">Gifts</a>
+        <a href="cart.html">Cart</a>
+    </div>
+
+
+    <div id="parent">
+        <div id="container2">
+
+            <div id="category">
+                <ul>
+                    <li>SHIRTS
+                        <ul>
+                            <li>Size></li>
+                            <li>Color</li>
+                            <li>Brand</li>
+                            <li>Fit</li>
+                            <li>Ocassion</li>
+                            <li>Price</li>
+
+                        </ul>
+                    </li>
+                    <li>JEANS
+                        <ul>
+                            <li>Size</li>
+                            <li>Color</li>
+                            <li>Brand</li>
+                            <li>Fit</li>
+                            <li>Ocassion</li>
+                            <li>Price</li>
+
+                        </ul>
+                    </li>
+                    <li>T-SHIRTS
+                        <ul>
+                            <li>Size</li>
+                            <li>Color</li>
+                            <li>Brand</li>
+                            <li>Fit</li>
+                            <li>Type</li>
+                            <li>Ocassion</li>
+                            <li>Price</li>
+
+                        </ul>
+                    </li>
+                    <li>SHORTS
+                        <ul>
+                            <li>Size</li>
+                            <li>Color</li>
+                            <li>Brand</li>
+                            <li>Fit</li>
+                            <li>Ocassion</li>
+                            <li>Price</li>
+
+                        </ul>
+                    </li>
+                    <li>TROUSRES
+                        <ul>
+                            <li>Size</li>
+                            <li>Color</li>
+                            <li>Brand</li>
+                            <li>Fit</li>
+                            <li>Ocassion</li>
+                            <li>Price</li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="container">
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    var mensData = [
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/309/371/k6mibgw0/kids-dress/d/5/4/10-11-years-blueribjacket-ftc-fashions-original-imafz5g6mffxnkd9.jpeg?q=50",
+            name: " REEBOK RUNNING ROADMAP SHOES",
+            price: "1170",
+            strikedoffprice: "2599",
+        },
+        {
+            image_url:
+                "https://rukminim1.flixcart.com/image/309/371/kw104nk0/jacket/m/4/e/-original-imag8sfnymquub9y.jpeg?q=50",
+            name: " REEBOK SWIM ARUBA FLIP SLIPPERS ",
+            price: 699,
+            strikedoffprice: 999,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/91WwlVsXVYL._AC_UL320_.jpg",
+            name: "  REEBOK RUNNING AUSTIN SHOES",
+            price: 945,
+            strikedoffprice: 2099,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/71Iz1QGupgL._AC_UL320_.jpg",
+            name: " REEBOK SWIM AVENGER FLIP LP SLIPPERS",
+            price: 399,
+            strikedoffprice: 799,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/91+p3hIqfuL._AC_UL320_.jpg",
+            name: " REEBOK RUNNING TEMPO SHOES ",
+            price: 1620,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/61G4MqPCFWL._AC_UL320_.jpg",
+            name: "  REEBOK RUNNING ASTRO BOOSTER SHOES ",
+            price: 1440,
+            strikedoffprice: 3199,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/814XsOvGXPL._AC_UL320_.jpg",
+            name: "  TRAINING WORKOUT READY ELITAGE PANTS ",
+            price: 1999,
+            strikedoffprice: 3199,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/71yKnx3DZkL._AC_UL320_.jpg ",
+            name: "MEN'S REEBOK TRAINING  POLO T-SHIRTS TEE  ",
+            price: 769,
+            strikedoffprice: 1099,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/712nylYv3jL._AC_UL320_.jpg",
+            name: " REEBOK TRAINING WORKOUT  TEE  ",
+            price: 1299,
+            strikedoffprice: 1440,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/917ThH6wfXL._AC_UL320_.jpg",
+            name: " REEBOK SUPER SOFT FLIP SLIPPERS",
+            price: 699,
+            strikedoffprice: 999,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/91jJYE2Ms7L._AC_UL320_.jpg",
+            name: " REEBOK RUNNING RUN SHOES  ",
+            price: 1620,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/61i9MN1uyPL._AC_UL320_.jpg",
+            name: "MEN'S REEBOK RUNNING GENESIS RUNNER SHOES  ",
+            price: 1620,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/716ED7cuWbL._AC_UL320_.jpg",
+            name: "MEN'S REEBOK SWIM RUSSLE FLIP SLIPPERS  ",
+            price: 599,
+            strikedoffprice: 999,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/61cz7DcLEOL._AC_UL320_.jpg",
+            name: " MEN'S REEBOK RUNNING TREND RUNNER SHOES",
+            price: 1575,
+            strikedoffprice: 3499,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/71L4l8CgNtL._AC_UL320_.jpg",
+            name: "UNISEX REEBOK RUNNING ZIG KINETICA II SHOES  ",
+            price: 9999,
+            strikedoffprice: 12000,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/61PROhk+mZL._AC_UL320_.jpg",
+            name: " MEN'S REEBOK TRAINING BAS POLO TEE ",
+            price: 779,
+            strikedoffprice: 1299,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/91zpJyEbrcL._AC_UL320_.jpg",
+            name: "MEN'S REEBOK TRAINING FOUNDATION  PANTS  ",
+            price: 1019,
+            strikedoffprice: 1699,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/51CuOCN3f7L._AC_UL320_.jpg",
+            name: "MEN'S REEBOK TRAINING FOUNDATION PANTS  ",
+            price: 1019,
+            strikedoffprice: 1699,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/71BM71uFu2L._AC_UL320_.jpg",
+            name: " MEN'S REEBOK RUNNING TREND SHOES",
+            price: 1575,
+            strikedoffprice: 3499,
+        },
+        {
+            image_url:
+                " https://m.media-amazon.com/images/I/91je6NYjdDL._AC_UL320_.jpg",
+            name: "  MEN'S REEBOK RUNNING ZTAUR RUN SHOES ",
+            price: 3499,
+            strikedoffprice: 4999,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/91mMozzE77L._AC_UL320_.jpg",
+            name: "MEN'S REEBOK SWIM ULTRA FLIP SLIPPERS   ",
+            price: 749,
+            strikedoffprice: 1499,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/61MrHsSwDxL._AC_UL320_.jpg",
+            name: "  MEN'S REEBOK SWIM FLEX CONNECT SANDALS ",
+            price: 1149,
+            strikedoffprice: 2299,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/61eVgUSHzKL._AC_UL320_.jpg",
+            name: " MEN'S REEBOK RUNNING GENESIS RUNNER SHOE  ",
+            price: 1620,
+            strikedoffprice: 3599,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/91loNy0SHqL._AC_UL320_.jpg",
+            name: " MEN'S REEBOK TRAINING RUNNER SHORTS  ",
+            price: 779,
+            strikedoffprice: 1299,
+        },
+        {
+            image_url:
+                "https://m.media-amazon.com/images/I/81JWltNYnrL._AC_UL320_.jpg",
+            name: " MEN REEBOK CLASSICS TRACKSUIT HOODIE  ",
+            price: 3499,
+            strikedoffprice: 4999,
+        },
+       
+       
+      
+    ];
+</script>
+
+
+<script src="mens.js">
+
+</script>
