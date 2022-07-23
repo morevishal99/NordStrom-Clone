@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NordStorm</title>
+  <link rel="stylesheet" href="data.css" />
+</head>
+
+<body>
+
+  <div id="top">
+
+    <div id="logo">
+        <img src="data:image/png;base64,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"
+            alt="">
+
+    </div>
+
+
+    <!-- ---------------search bar----------- -->
+    <div id="topnavbar">
+        <h2> <a href="Navbar2.html"> Nordstrom  Rack</a> </h2>
+        <input type="text" placeholder="Search products or brand">
+        
+        <h2>MyCart</h2>
+        <h2 id="displayname"> </h2>
+    </div>
+
+    <hr>
+
+    
+
+</div>
+
+<div id="links">
+    <a href="Navbar2.html">Home </a>
+    <a href="mens.html">Mens</a>
+    <a href="kids.html">Kids</a>
+    <a href="beauty.html">Beauty</a>
+    <a href="gifts.html">Gifts</a>
+    <a href="cart.html">Cart</a>
+</div>
+
+
+<div id="parent">
+    <div id="container2">
+
+        <div id="category">
+            <ul>
+                <li>SHIRTS
+                    <ul>
+                        <li>Size></li>
+                        <li>Color</li>
+                        <li>Brand</li>
+                        <li>Fit</li>
+                        <li>Ocassion</li>
+                        <li>Price</li>
+
+                    </ul>
+                </li>
+                <li>JEANS
+                    <ul>
+                        <li>Size</li>
+                        <li>Color</li>
+                        <li>Brand</li>
+                        <li>Fit</li>
+                        <li>Ocassion</li>
+                        <li>Price</li>
+
+                    </ul>
+                </li>
+                <li>T-SHIRTS
+                    <ul>
+                        <li>Size</li>
+                        <li>Color</li>
+                        <li>Brand</li>
+                        <li>Fit</li>
+                        <li>Type</li>
+                        <li>Ocassion</li>
+                        <li>Price</li>
+
+                    </ul>
+                </li>
+                <li>SHORTS
+                    <ul>
+                        <li>Size</li>
+                        <li>Color</li>
+                        <li>Brand</li>
+                        <li>Fit</li>
+                        <li>Ocassion</li>
+                        <li>Price</li>
+
+                    </ul>
+                </li>
+                <li>TROUSRES
+                    <ul>
+                        <li>Size</li>
+                        <li>Color</li>
+                        <li>Brand</li>
+                        <li>Fit</li>
+                        <li>Ocassion</li>
+                        <li>Price</li>
+
+                    </ul>
+                </li>
+
+                <li>SHIRTS
+                  <ul>
+                      <li>Size></li>
+                      <li>Color</li>
+                      <li>Brand</li>
+                      <li>Fit</li>
+                      <li>Ocassion</li>
+                      <li>Price</li>
+
+                  </ul>
+              </li>
+
+              <li>SHIRTS
+                <ul>
+                    <li>Size></li>
+                    <li>Color</li>
+                    <li>Brand</li>
+                    <li>Fit</li>
+                    <li>Ocassion</li>
+                    <li>Price</li>
+
+                </ul>
+            </li>
+
+            <li>SHIRTS
+              <ul>
+                  <li>Size></li>
+                  <li>Color</li>
+                  <li>Brand</li>
+                  <li>Fit</li>
+                  <li>Ocassion</li>
+                  <li>Price</li>
+
+              </ul>
+          </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="container">
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
+<script>
+
+
+  var womensData = [
+    {
+      image_url:
+        "https://res.cloudinary.com/dabfyhdoz/image/upload/v1524685644/skirt_fcjpdn.png",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1549,
+      strikedoffprice: 1799,
+    },
+    {
+      image_url:
+        "https://res.cloudinary.com/dabfyhdoz/image/upload/v1524685644/shirt_leggf9.png",
+      name: "WOMEN'S REEBOK POLYTIGHT",
+      price: 1249,
+      strikedoffprice: 1749,
+    },
+    {
+      image_url:
+        "https://res.cloudinary.com/dabfyhdoz/image/upload/v1524685644/pink_su4eyp.png",
+      name: "WOMEN'S REEBOK SLEEVE TEE",
+      price: 699,
+      strikedoffprice: 1245,
+    },
+    {
+      image_url:
+        "https://res.cloudinary.com/dabfyhdoz/image/upload/v1524685644/dress2_uxttkd.png",
+      name: "WOMEN'S REEBOK PP TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+      image_url:
+        "https://res.cloudinary.com/dabfyhdoz/image/upload/v1524685644/dress1_mwxgbb.png",
+      name: "WOMEN'S REEBOK PP TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+      image_url:
+        "https://res.cloudinary.com/dabfyhdoz/image/upload/v1524685644/crop_t7wwso.png",
+      name: "WOMEN'S REEBOK CLASSIC LEGGINGS",
+      price: 1399,
+      strikedoffprice: 2799,
+    },
+    {
+      image_url:
+        "https://images.pexels.com/photos/914668/pexels-photo-914668.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 1099,
+      strikedoffprice: 1249,
+    },
+    {
+      image_url:
+        "https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 1249,
+      strikedoffprice: 1489,
+    },
+    {
+      image_url:
+        "https://images.pexels.com/photos/54203/pexels-photo-54203.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      name: "WOMEN'S CLASSIC REEBOK PANTS",
+      price: 1459,
+      strikedoffprice: 1235,
+    },
+    {
+      image_url:
+        "https://images.pexels.com/photos/6764040/pexels-photo-6764040.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      name: "WOMEN'S REEBOK RUNNING RUN ESSENTIALS SHORT SLEEVE GRAPHIC",
+      price: 849,
+      strikedoffprice: 2599,
+    },
+    {
+      image_url:
+        "https://gd.image-gmkt.com/li/694/634/1721634694.g_220-w-st_g.jpg.webp",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1550,
+      strikedoffprice: 2599,
+    },
+    {
+      image_url:
+        "https://gd.image-gmkt.com/li/587/874/1667874587.g_220-w-st_g.jpg.webp",
+      name: "WOMEN'S REEBOK RUNNING OSR HIGH-IMPACT BRA",
+      price: 1399,
+      strikedoffprice: 6599,
+    },
+    {
+      image_url:
+        "https://gd.image-gmkt.com/li/423/634/1721634423.g_220-w-st_g.jpg.webp",
+      name: "UNISEX REEBOK TRAINING ACTIVE CORE BACKPACK - MEDIUM",
+      price: 949,
+      strikedoffprice: 1899,
+    },
+    {
+      image_url:
+        "https://gd.image-gmkt.com/li/867/797/1667797867.g_220-w-st_g.jpg.webp",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1549,
+      strikedoffprice: 1799,
+    },
+    {
+      image_url:
+        "https://gd.image-gmkt.com/li/007/140/1654140007.g_220-w-st_g.jpg.webp",
+      name: "WOMEN'S REEBOK POLYTIGHT",
+      price: 1249,
+      strikedoffprice: 1749,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/l1v1uvk0/dress/f/v/u/m-w22-wolisq-original-imagdbwxahwtum62.jpeg?q=50",
+      name: "WOMEN'S REEBOK SLEEVE TEE",
+      price: 699,
+      strikedoffprice: 1245,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/ktaeqvk0/dress/3/v/t/xl-sn-dr-80-slenor-original-imag6zd4wddgpng5.jpeg?q=50",
+      name: "WOMEN'S REEBOK PP TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/kwqq1zk0/dress/b/1/y/xl-wrap-dress-djin-original-imag9cuv288jys8z.jpeg?q=50",
+      name: "WOMEN'S REEBOK PP TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/knexksw0/dress/k/l/2/xxl-0011-paralians-original-imag23pqrkw2vxxn.jpeg?q=50",
+      name: "WOMEN'S REEBOK CLASSIC LEGGINGS",
+      price: 1399,
+      strikedoffprice: 2799,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/l5fnhjk0/dress/y/7/5/xs-4ev-45-four-ever-original-imagg4ybvsptbydh.jpeg?q=50",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 1099,
+      strikedoffprice: 1249,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/khavrm80-0/dress/f/l/n/xxl-dress-226-daevish-original-imafxchtedxbzszb.jpeg?q=50",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 1249,
+      strikedoffprice: 1489,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/ky1vl3k0/dress/p/j/p/xxl-pltdr41olive-pretty-loving-thing-original-imagad6ygdzh9syz.jpeg?q=50",
+      name: "WOMEN'S CLASSIC REEBOK PANTS",
+      price: 1459,
+      strikedoffprice: 1235,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/jxtakcw0/dress/f/3/v/s-prss19dr03d-beige-provogue-original-imafg6zettz3b8km.jpeg?q=50",
+      name: "WOMEN'S REEBOK RUNNING RUN ESSENTIALS SHORT SLEEVE GRAPHIC",
+      price: 849,
+      strikedoffprice: 2599,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/kzsqykw0/dress/e/n/g/m-1516-sheetal-associates-original-imagbqcjmwgtvzxy.jpeg?q=50",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1550,
+      strikedoffprice: 2599,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/kt7jv680/dress/w/i/e/xl-3508-the-dry-state-original-imag6hhz9ztjf8dn.jpeg?q=50",
+      name: "WOMEN'S REEBOK RUNNING OSR HIGH-IMPACT BRA",
+      price: 1399,
+      strikedoffprice: 6599,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/kxz0pe80/dress/m/c/b/l-170-red-aahwan-original-imagab7fjuuffumr.jpeg?q=50",
+      name: "UNISEX REEBOK TRAINING ACTIVE CORE BACKPACK - MEDIUM",
+      price: 949,
+      strikedoffprice: 1899,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/kq6yefk0/dress/n/h/g/xs-1082-sheetal-associates-original-imag49m2nk6yk9zf.jpeg?q=50",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1549,
+      strikedoffprice: 1799,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/kz5vwy80/dress/a/g/b/s-marigold-vaani-creation-original-imagb8mfc3z5fckb.jpeg?q=50",
+      name: "WOMEN'S REEBOK POLYTIGHT",
+      price: 1249,
+      strikedoffprice: 1749,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/ku2zjww0/dress/g/u/o/l-1211-sheetal-associates-original-imag7aafpvt9rjdj.jpeg?q=50",
+      name: "WOMEN'S REEBOK SLEEVE TEE",
+      price: 699,
+      strikedoffprice: 1245,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/l0o6nbk0/dress/z/o/n/xs-1541-sheetal-associates-original-imagcek4bd2zy8zg.jpeg?q=50",
+      name: "WOMEN'S REEBOK PP TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/309/371/l4iscy80/dress/r/s/m/m-5779-darzi-original-imagfeebmxgggfng.jpeg?q=50",
+      name: "WOMEN'S REEBOK PP TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/345/414/l0fm07k0/top/d/a/9/l-180-green-aahwan-original-imagc83kabgdzzac.jpeg?q=70",
+      name: "WOMEN'S REEBOK CLASSIC LEGGINGS",
+      price: 1399,
+      strikedoffprice: 2799,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/345/414/kq8dua80/skirt/k/h/v/xs-sfskrt3291-sassafras-original-imag4agujzmt6wdv.jpeg?q=70",
+      name: "WOMEN'S REEBOK CLASSIC TIGHTS",
+      price: 1099,
+      strikedoffprice: 1249,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/432/518/l4x2rgw0/dress/l/c/5/s-186-blue-aahwan-original-imagfpcpchzxee7p.jpeg?q=70",
+      name: "UNISEX REEBOK SHOW SHOES",
+      price: 1249,
+      strikedoffprice: 1489,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/432/518/kxqg2a80/jumpsuit/d/m/3/l-jp1241mr-berrylush-original-imaga4a2xtrhkgnb.jpeg?q=70",
+      name: "WOMEN'S CLASSIC REEBOK PANTS",
+      price: 1459,
+      strikedoffprice: 1235,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/432/518/kvba7bk0/jumpsuit/s/s/h/m-bjs003yl-bershka-original-imag88sb7x72nurx.jpeg?q=70",
+      name: "WOMEN'S REEBOK RUNNING RUN ESSENTIALS SHORT SLEEVE GRAPHIC",
+      price: 849,
+      strikedoffprice: 2599,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/432/518/l22724w0/jumpsuit/c/c/c/l-5524-darzi-original-imagdhqgfzxgf3wn.jpeg?q=70",
+      name: "WOMEN'S REEBOK TRAINING WOR MESH TIGHTS",
+      price: 1550,
+      strikedoffprice: 2599,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/432/518/l2ghgnk0/dress/u/l/z/xl-5551-darzi-original-imagdssd3rgamund.jpeg?q=70",
+      name: "WOMEN'S REEBOK RUNNING OSR HIGH-IMPACT BRA",
+      price: 1399,
+      strikedoffprice: 6599,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/432/518/l3rmzrk0/dress/3/y/r/xl-sfdrss10719-sassafras-original-imagetb7hpezgzjp.jpeg?q=70",
+      name: "UNISEX REEBOK TRAINING ACTIVE CORE BACKPACK - MEDIUM",
+      price: 949,
+      strikedoffprice: 1899,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/432/518/l4iscy80/dress/l/d/v/m-5780-darzi-original-imagfeebtzmh3b7y.jpeg?q=70",
+      name: "WOMEN'S REEBOK PRINT LEGGINGS ",
+      price: 1549,
+      strikedoffprice: 1799,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/432/518/l3q7jww0/dress/l/u/n/4xl-sea-foam-hiyansh-original-imagerhyqghkbnp5.jpeg?q=70",
+      name: "WOMEN'S REEBOK POLYTIGHT",
+      price: 1249,
+      strikedoffprice: 1749,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/432/518/l33cia80/dress/1/x/r/l-331tk10042-selvia-original-imageandxfc6eu4f.jpeg?q=70",
+      name: "WOMEN'S REEBOK SLEEVE TEE",
+      price: 699,
+      strikedoffprice: 1245,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/432/518/l4x2rgw0/dress/h/v/q/xs-186-red-aahwan-original-imagfpcph8gatw9w.jpeg?q=70",
+      name: "WOMEN'S REEBOK PP TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/432/518/l4n2oi80/dress/h/8/n/xl-331tk10043j-swaron-original-imagfhut2hfeffdt.jpeg?q=70",
+      name: "WOMEN'S REEBOK PP TIGHTS",
+      price: 749,
+      strikedoffprice: 1299,
+    },
+    {
+      image_url:
+        "https://rukminim1.flixcart.com/image/432/518/l33cia80/dress/r/s/l/xl-331tk10041-selvia-original-imageandzk8gpzxu.jpeg?q=70",
+      name: "WOMEN'S REEBOK CLASSIC LEGGINGS",
+      price: 1399,
+      strikedoffprice: 2799,
+    },
+  ];
+</script>
+
+<script src="womens.js">
+  
+</script>
