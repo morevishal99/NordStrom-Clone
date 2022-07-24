@@ -1,6 +1,4 @@
-/* * {
-    margin-top: 20px 10px;
-} */
+
 
 #top {
     text-align: center;
@@ -52,15 +50,16 @@
 #links {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 60%;
     margin: auto;
     font-size: 30px;
-    background-color: rgb(171, 201, 198);
+    /* background-color: rgb(48, 51, 51); */
 }
+
 
 #links>a {
     font-size: 20px;
-    color: brown;
+    color: rgb(100, 96, 96);
 }
 
 #parent {
@@ -72,7 +71,7 @@
 
 #container2 {
     /* display: block; */
-    width: 15%;
+    width: 20%;
     margin: auto;
     margin-top: -250px;
     position: absolute;
@@ -131,7 +130,7 @@
 }
 
 #category ul ul li {
-    float: none;
+    float: left;
     width: 200px
 }
 
@@ -155,26 +154,72 @@
 #container {
     display: grid;
     width: 90%;
-    margin-left: 280px;
+    margin-left: 240px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    gap: 40px
-    ;
+    gap: 40px;
     justify-content: space-between;
+   
 }
 
 
 #container>div {
-
     margin-top: 70px;
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+#container>div>img:hover{
+    height: 220px
+    /* width: 20%; */
+    /* margin-top: 70px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
 }
 
 #container>div>img {
-    height: 200px
+    height: 200px;
+    margin-top: 20px;
 }
 
+button{
+    height:20px;
+background-color:white;
+color:#379AB9;
+border: none;
+font-size: 11px;
+padding: 5px;
+border: 1px solid #379AB9 ;
+margin-bottom: 20px;
+}
+button:hover{
+    height:20px;
+background-color:#379AB9;
+color: white;
+border: none;
+font-size: 11px;
+padding: 5px;
+}
 
+h5{
+font-size: 13px;
+color: rgb(66, 64, 64);
+}
+h5:hover{
+    font-size: 15px;
+    color: rgb(66, 64, 64);
+    }
+p{
+font-size: 12px;
+color: rgb(0, 0, 0);
+
+}
+p:hover{
+    font-size: 15px;
+color: rgb(75, 28, 28);
+}

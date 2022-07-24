@@ -36,6 +36,8 @@
   width: 50%;
   height: 30px;
   font-size: 13px;
+  /* border: 1px solid blue; */
+  
 }
 #topnavbar>h2>a>img{
   height: 40px;
@@ -140,14 +142,25 @@ text-decoration: underline;
 }
 
  #Createaccount{
-    width: 15%;
+    width: 20%;
     height: 30px;
      text-align: center;
      font-size: 13px;
-     border: 1px solid rgb(13, 0, 0);
+     border: 1px solid #2C819D;
      margin: auto;
      margin-bottom: 5px;
      padding-top: 10px;
+     /* color:  #2C819D; */
+ }
+ #Createaccount>a{
+  color:#2C819D ;
+ }
+ #Createaccount:hover{
+  /* color:white; */
+  background-color: #2C819D;
+ }
+ #Createaccount>a:hover{
+  color:white;
  }
  #logo{
   width: 30%;
@@ -395,10 +408,11 @@ color: rgb(57, 56, 56);
 .inslider{
   display: flex;
   position: relative;
-  width: 80%;
- 
+  /* width: 80%; */
   margin: auto;
   margin-top: 20px;
+  /* gap: 20px ;*/
+  
  }
 .slidee{
 display: flex;
