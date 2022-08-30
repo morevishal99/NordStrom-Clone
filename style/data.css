@@ -1,4 +1,7 @@
-
+* {
+    padding: 2px;
+    margin: 5px;
+}
 
 #top {
     text-align: center;
@@ -75,7 +78,7 @@
     margin: auto;
     margin-top: -250px;
     position: absolute;
-    
+
     position: fixed;
 
 }
@@ -159,7 +162,8 @@
     grid-template-rows: auto;
     gap: 40px;
     justify-content: space-between;
-   
+    /* background-color:rgb(174, 174, 174); */
+
 }
 
 
@@ -168,14 +172,16 @@
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
+    border-radius: 10px 20px;
+    /* box-shadow: rgba(30, 2, 2, 0.35) 0px 5px 15px; */
+    /* box-shadow: rgba(7, 0, 5, 0.4) 5px 5px, rgba(17, 0, 11, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-#container>div>img:hover{
+#container>div>img:hover {
     height: 220px
-    /* width: 20%; */
-    /* margin-top: 70px;
+        /* width: 20%; */
+        /* margin-top: 70px;
     align-items: center;
     text-align: center;
     justify-content: space-between;
@@ -187,39 +193,49 @@
     margin-top: 20px;
 }
 
-button{
-    height:20px;
-background-color:white;
-color:#379AB9;
-border: none;
-font-size: 11px;
-padding: 5px;
-border: 1px solid #379AB9 ;
-margin-bottom: 20px;
-}
-button:hover{
-    height:20px;
-background-color:#379AB9;
-color: white;
-border: none;
-font-size: 11px;
-padding: 5px;
+button {
+    height: 30px;
+    background-color: white;
+    color: #379AB9;
+    /* border: none; */
+    font-size: 11px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #379AB9;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-h5{
-font-size: 13px;
-color: rgb(66, 64, 64);
+button:hover {
+    height: 30px;
+    background-color: #379AB9;
+    color: white;
+
+    font-size: 11px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #379AB9;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
-h5:hover{
+
+h5 {
+    font-size: 13px;
+    color: rgb(66, 64, 64);
+}
+
+h5:hover {
     font-size: 15px;
     color: rgb(66, 64, 64);
-    }
-p{
-font-size: 12px;
-color: rgb(0, 0, 0);
+}
+
+p {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
 
 }
-p:hover{
+
+p:hover {
     font-size: 15px;
-color: rgb(75, 28, 28);
+    color: rgb(75, 28, 28);
 }

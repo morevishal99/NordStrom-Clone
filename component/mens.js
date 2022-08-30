@@ -32,6 +32,7 @@ mensData.forEach(function (elem) {
 
 function addtocart(elem) {
     menarr.push(elem)
+    alert("Product Added to Cart")
     localStorage.setItem("allproducts", JSON.stringify(menarr))
 
 }

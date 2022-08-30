@@ -35,6 +35,7 @@
   
   function addtocart(elem) {
     womenarr.push(elem)
+    alert("Product Added to Cart")
     localStorage.setItem("allproducts", JSON.stringify(womenarr))
 
   }
