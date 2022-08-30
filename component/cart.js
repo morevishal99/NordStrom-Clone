@@ -1,4 +1,10 @@
 let arr = JSON.parse(localStorage.getItem("allproducts")) || []
+if(arr==""){
+    document.getElementById("text").innerText="Cart is Empty"
+}
+else{
+
+
     let total = 0
     arr.forEach(function (elem, index) {
         total = total + Number(elem.price)
@@ -32,7 +38,7 @@ let arr = JSON.parse(localStorage.getItem("allproducts")) || []
     })
 
 
-
+}
 
     function deleteel(index) {
         arr.splice(index, 1)

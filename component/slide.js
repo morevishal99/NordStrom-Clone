@@ -89,3 +89,7 @@ function display(ele){
 
 
 
+function alert(){
+    alert="SignIn first"
+    window.location.href="signin.html"
+}
