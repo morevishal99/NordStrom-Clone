@@ -1,0 +1,48 @@
+#main {
+  display: flex;
+
+  gap: 50px;
+  margin: 30px;
+  padding: 30px;
+  justify-content: space-around;
+}
+#containercart {
+  width: 50%;
+}
+
+#containercart > div > img {
+  width: 450px;
+}
+#side {
+  width: 50%;
+}
+#title {
+  font-size: 18px;
+}
+#price {
+  font-size: 20px;
+}
+#offer {
+  font-size: 15px;
+}
+#side > h5 {
+  font-size: 20px;
+}
+#select {
+  width: 300px;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+}
+#option {
+    /* width: 300px; */
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+  }
+#side > button {
+  width: 300px;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+}

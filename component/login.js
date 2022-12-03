@@ -6,7 +6,7 @@ let signIn = JSON.parse(localStorage.getItem("signIndetail")) || []
 
 
         if (signIn.length===0){
-            alert("No User Found")
+            alert("No User Found ,Need To SignIn First")
             return
         }
      
@@ -21,7 +21,7 @@ signIn.forEach(function(ele){
     if(ele.email==obj.email && ele.password==obj.password){
         alert("Login Success")
         localStorage.setItem("LogIndetail", JSON.stringify(signIn))
-        window.location.href = "Navbar2.html"
+        window.location.href = "home.html"
 
     }else{
         alert("User Not Found")
