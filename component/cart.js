@@ -2,11 +2,13 @@
 let shiping =document.getElementById("shiping")
 let ship=document.createElement("p")
 ship=Math.floor(Math.random() * (99 - 10 + 1)) + 40
-shiping.append(ship)
+
+
 let arr = JSON.parse(localStorage.getItem("allproducts")) || [];
 if (arr == "") {
   document.getElementById("text").innerText = "YOUR BAG IS EMPTY";
 } else {
+  shiping.append(ship)
   let fulltotal=0
   let total = 0;
   arr.forEach(function (elem, index) {
@@ -62,3 +64,11 @@ document.getElementById("checkout").addEventListener("click" ,function(){
   window.location.href="checkout.html"
   // alert("done bhenchod")
 })
+let user = JSON.parse(localStorage.getItem("signIndetail")) || [];
+function display(ele) {
+  user.forEach(function (ele) {
+    document.querySelector("#displayname").innerText = ele.name ;
+    document.querySelector("#UserName").innerText ="Welcome Back"+" " + ele.name+"!" ;
+  });
+}
+display(user);

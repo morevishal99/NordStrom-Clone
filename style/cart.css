@@ -395,3 +395,59 @@ body {
 #div>div>img{
  width: 100px;
 }
+
+#mid-section{
+  margin-left:  5px;
+}
+#mid{
+  display: flex;
+  /* border: 1px solid grey; */
+  /* width: 350px; */
+   margin: 50px 0px 0px 20px;
+ }
+#mid>h4{
+ margin: 5px;
+ padding: 15px;
+ 
+}
+#mid>:nth-child(1){
+ 
+  background-color:rgb(227,227,227);
+  
+ }
+ #mid-section>h3,h6{
+ margin: 5px;
+ padding: 15px;
+ }
+ #quantity{
+
+  display: flex;
+  /* width: 70%; */
+  margin: auto;
+  justify-content: space-around;
+ }
+ #paymethod>h4,h6{
+font-size: 20px;
+color: rgb(115, 115, 115);
+ }
+ .ok{
+  display: flex;
+  /* text-align: left; */
+  justify-content: space-between;
+  gap: 100px;
+  font-size: 20px;
+color: rgb(115, 115, 115);
+ }
+
+ #checkout{
+  width: 300px;
+  color: white;
+  height: 50px;
+  font-size: 20px;
+  background-color:rgb(0,129,157);
+ }
+ #text{
+  margin-left: 15px;
+  font-size: 20px;
+color: rgb(115, 115, 115);
+ }

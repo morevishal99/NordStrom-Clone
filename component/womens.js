@@ -33,3 +33,13 @@ function addtocart(elem) {
   alert("Product Added to Cart");
   localStorage.setItem("allproducts", JSON.stringify(womenarr));
 }
+
+
+let user = JSON.parse(localStorage.getItem("signIndetail")) || [];
+function display(ele) {
+  user.forEach(function (ele) {
+    document.querySelector("#displayname").innerText = ele.name ;
+    document.querySelector("#UserName").innerText ="Welcome Back"+" " + ele.name+"!" ;
+  });
+}
+display(user);
