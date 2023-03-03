@@ -19,4 +19,4 @@ Products Details Page
 ![Screenshot (1099)](https://user-images.githubusercontent.com/107456969/222657712-2c0db63e-9938-4588-80e0-d2e130b72009.png)
 
 Cart Page
-![Screenshot (1099)](https://user-images.githubusercontent.com/107456969/222657634-4e272fcd-86d4-452a-a314-4829929d5dcf.png)
+![Screenshot (1100)](https://user-images.githubusercontent.com/107456969/222657817-083f8528-ccc0-43b1-aee9-5a64844f6a61.png)
