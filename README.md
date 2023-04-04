@@ -1,11 +1,11 @@
-##This is my first project during my learning phase,i tried to make a clone of an e-commerce website Nordstrom.com.I hope you like it,you can also access the website through deployed link mentioned in about section
+This is my first project during my learning phase,i tried to make a clone of an e-commerce website Nordstrom.com.I hope you like it,you can also access the website through deployed link mentioned in about section
 
-##Some details about the website are mentioned below with attached screenshots
+Some details about the website are mentioned below with attached screenshots
 
 
-##Tech Stack used:  HTML | CSS  | JAVASCRIPT | LOCAL STORAGE
+Tech Stack used:  HTML | CSS  | JAVASCRIPT | LOCAL STORAGE
 
-#Login Page
+Login Page
 
 ![Screenshot (1094)](https://user-images.githubusercontent.com/107456969/222657323-826247aa-3752-45db-9801-f802cee8aef0.png)
 
