@@ -167,7 +167,7 @@
 </head>
 
 <body>
-    <div id="top_nav_bar" class="top_nav center_text"> </div>
+    <!-- <div id="top_nav_bar" class="top_nav center_text"> </div> -->
 
 
     <!---Middle Nav Start-->
@@ -187,7 +187,7 @@
 
 
 
-        <form onsubmit="checkout(event)" id="checkout_form" action="">
+        <form onSubmit=checkout(event) id="checkout_form" action="">
 
             <span class="span">DELIVERY</span>
             <p></p>
@@ -294,7 +294,7 @@
             </div>
 
             <div>
-                <button type="submit"> PROCEDE TO PAYMENT </button>
+                <button id="payment" type="submit"  > PROCEDE TO PAYMENT </button>
 
             </div>
         </form>
@@ -303,4 +303,4 @@
 </body>
 
 </html>
-<script src="scripts/checkout.js"></script>
+<script src="./component/checkout.js"></script>

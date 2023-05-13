@@ -3,7 +3,7 @@ form {
   justify-content: center;
   text-align: center;
   display: block;
-  width: 25%;
+  /* width: 25%; */
   margin: auto;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin-top: 40px;
@@ -14,7 +14,7 @@ form {
 .container {
   padding: 16px;
   display: block;
-  width: 80%;
+  /* width: 80%; */
   margin: auto;
   text-align: center;
 }

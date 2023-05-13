@@ -1,8 +1,4 @@
-var top_nav_text = [
-    "Customize your cream now! Get started.",
-    "Speak with certified ayurvedic doctors.Book Now!",
-    "We are delivering across India and Internationally",
-];
+
 function top_nav() {
     let nav_text = document.getElementById("top_nav_bar");
     nav_text.textContent = "Customize your cream now! Get started."
@@ -54,6 +50,10 @@ function order_summary() {
 
 order_summary();
 
+// document.getElementById("payment").addEventListener("click" ,function(){
+//     window.location.href="payment.html"
+//     // alert("done bhenchod")
+//   })
 
 function checkout(e) {
     e.preventDefault();
